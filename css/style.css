@@ -6,7 +6,7 @@
 
 @import url(./partials/global.css);
 
-/* Navigation bar */
+/* Navigation bar ------------------------------------------------------------------------------------  */
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 }
@@ -42,7 +42,7 @@
     background-clip: text;
 }
 
-/* Banner/intro area */
+/* Banner/intro area ------------------------------------------------------------------------------------ */
 .site-main .site-banner {
     background: url() no-repeat 0% 50%;
 }
@@ -75,3 +75,43 @@
     width: 90rem;
 }
 
+/* about me ------------------------------------------------------------------------------------ */
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+}
+
+.site-main .about-area .about-title .paragraph >p{
+    padding: .4rem 0;
+}
+
+/* skills ------------------------------------------------------------------------------------ */
+
+.site-main .skills-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .skills-area .skills-title{
+    padding: 0 14rem;
+}
+
+.site-main .skills-area .skills-title h1{
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+.site-main .skills-area .skills{
+    background: rgba(230, 262, 272, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    margin: 3rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main .skills-area .skills:hover{
+    box-shadow: var(--box-shadow);
+}
