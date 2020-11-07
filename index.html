@@ -1,255 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AndiFan</title>
+    <title>Andi Fan Interactive Resume</title>
 
-    <!-- Bootstrap  -->
+
+    <!--  Bootstrap css file  -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
-    <!-- font awesome -->
+    <!--  font awesome icons  -->
     <link rel="stylesheet" href="./css/all.min.css">
 
-    <!-- custom css file -->
+    <!--  custom css file  -->
     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Jquery -->
-    <scipt src="./js/jquery.3.5.1.js"></scipt>
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
 
-    <!-- boostrap js file -->
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
+
+    <!--  Bootstrap js file  -->
     <script src="./js/bootstrap.min.js"></script>
 
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+
 </head>
+
 <body>
 
-<!--Header and Navbar area -->
-    <header class="header_area">
+
+    <!--  ======================= Start Header Area ============================== -->
+
+    <header class="header_area" id="page-top">
         <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand nav-home" href="#">Home<span class="sr-only">(current)</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-trans" id="mainNav">
+
+                <a class="navbar-brand nav-home js-scroll-trigger" href="#page-top">Andi Fan</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+
+                <div class="collapse navbar-collapse" id="navbarResponsive">
                     <div class="mr-auto"></div>
-                  <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#skills">skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">contact</a>
+                        </li>
 
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
+                    </ul>
                 </div>
-              </nav>
+            </nav>
         </div>
     </header>
 
-<main class="site-main">
+  
+    <main class="site-main">
 
-    <!--Profile banner-->
-    <section class="site-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 site-title">
-                    <h3 class="title-text">Hi,</h3>
-                    <h1 class="title-text text-uppercase">I'm Andi</h1>
-                    <h4 class="title-text text-uppercase">CompSci Student</h4>
-                    <div class="site-buttons">
-                        <div class="d-flex flex-row flex-wrap">
-                            <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
-                                me</button>
-                            <button type="button" class="btn button secondary-button text-uppercase">Resume</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 banner-image">
-                    <img src="./images/andi.png" alt="banner-img" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--About me section-->
-    <section class="about-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="about-image">
-                        <img src="./images/andi.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 about-title">
-                    <h2 class="text-uppercase pt-5">
-                        <span>Passionate</span>
-                        <span>About</span>
-                        <span>Technology</span>
-                    </h2>
-                    <div class="paragraph py-4 w-75">
-                        <p class="para">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus harum adipisci necessitatibus quod blanditiis iure quae repellendus. Odit, neque numquam.
-                        </p>
-                        <p class="para">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus harum adipisci necessitatibus quod blanditiis iure quae repellendus. Odit, neque numquam.
-                        </p>
-                    </div>
-                    <button type="button" class="btn button primary-button text-uppercase">Cover Letter</button>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--Software skills and technologies section-->
-    <section class="skills-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 skills-title">
-                    <h1 class="text-uppercase text-center title-text">Technical Skills</h1>
-                    <p class="para text-center">
-                        Below are some of the technologies and frameworks I've learnt over the years. If you'd like to see how I apply
-                        these skills, please take a look at the projects section.
-                    </p>
-                </div>
-            </div>
-            <div class="container skills-list">
+        <section class="site-banner">
+            <div class="container">
                 <div class="row">
-
-                    <div class="col-lg-4 col-md-12 col-sm-6">
-                        <div class="skills">
-                            <div class="skills-image text-center py-4">
-                                <img src="./images/toolkit.png" alt="" style="width:100px;height:100px;">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-uppercase text-center font-roboto">Developer Toolkit</h5>
-                                <p class="card-text text-secondary">
-                                    <ul>
-                                        <li>
-                                            Visual Studios Code
-                                        </li>
-                                        <li>
-                                            Git 
-                                        </li>
-                                        <li>
-                                            GNU Debugger
-                                        </li>
-                                        <li>
-                                            Valgrind Memory Debugger
-                                        </li>
-                                        <li>
-                                            SCRUM/Agile methodologies
-                                        </li>
-                                    </ul>
-                                </p>
+                    <div class="col-lg-12 col-md-12 site-title">
+                        <h3 class="title-text">Hi I'm</h3>
+                        <h1 class="title-text">Andi</h1>
+                        <h4 class="title-text ">Back-end Developer and CS undergrad</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire me</button>
+                                <button type="button" class="btn button secondary-button text-uppercase">Resume</button>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-6">
-                        <div class="skills">
-                            <div class="skills-image text-center py-4">
-                                <img src="./images/platforms.png" alt="" style="width:100px;height:100px;">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-uppercase text-center font-roboto">Platforms & Frameworks</h5>
-                                <p class="card-text text-secondary">
-                                    <ul>
-                                        <li>
-                                            Node.js
-                                        </li>
-                                        <li>
-                                            Express
-                                        </li>
-                                        <li>
-                                            Bootstrap
-                                        </li>
-                                        <li>
-                                            React
-                                        </li>
-                                        <li>
-                                            Laravel
-                                        </li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-6">
-                        <div class="skills">
-                            <div class="skills-image text-center py-4">
-                                <img src="./images/languages.png" alt="" style="width:95px;height:95px;">
-                            </div>
-                            <div class="card-body text">
-                                <h5 class="card-title text-uppercase text-center font-roboto">Languages</h5>
-                                <p class="card-text text-secondary">
-                                    <ul>
-                                        <li>
-                                            C/C++
-                                        </li>
-                                        <li>
-                                            Java
-                                        </li>
-                                        <li>
-                                            Python
-                                        </li>
-                                        <li>
-                                            JavaScript
-                                        </li>
-                                        <li>
-                                            jQuery
-                                        </li>
-                                        <li>
-                                            PHP
-                                        </li>
-                                        <li>
-                                            SQL
-                                        </li>
-                                        <li>
-                                            Shell Scripting
-                                        </li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="mr-auto"></div>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </section>
+      
 
-    <!-- Projects Area ------------------------------------------------------------------------------>
-    <section class="project-area">
-        <div class="container">
-            <div class="project-title pb-5">
-                <h1 class="text-uppercase title-h1">Just some</h1>
-                <h1 class="text-uppercase title-h1">of my projects</h1>
+        <!--  About me ------------------------------------------------------------------------------------------------------- -->
+
+        <section class="about-area" id="about">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./images/andi.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
+                                possimus officia maiores perferendis ut! Quos, perspiciatis.
+                            </p>
+                            <p class="para">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
+                                here
+                            </p>
+                        </div>
+                        <button type="button" class="btn button primary-button text-uppercase">Cover Letter</button>
+                    </div>
+                </div>
             </div>
-            <div class="button-group">
-                <button type="button" class="active">All</button>
-                <button type="button">Full-Stack</button>
-                <button type="button">Systems Programming</button>
-                <button type="button">Pet-Projects</button>
-                
-                
+        </section>
+
+        <!--  ========================= End About Area ==========================  -->
+
+
+        <!--  ====================== Start skills Area =============================  -->
+
+        <section class="skills-area" id="skills">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center skills-title">
+                        <h1 class="text-uppercase title-text">Technical skills</h1>
+                        <p class="para">
+                            Below are some of the technologies and frameworks I've learnt over the years. 
+                            If you'd like to see how I apply these skills, please take a look at the projects section.
+                        </p>
+                    </div>
+                </div>
+                <div class="container skills-list">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="skills">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./images/toolkit.png" alt="skills-1" style="width:100px;height:100px;" >
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase font-roboto text-center">Developer Toolkit</h5>
+                                    <p class="card-text text-secondary">
+                                        <ul>
+                                            <li>
+                                                Visual Studios Code
+                                            </li>
+                                            <li>
+                                                Git 
+                                            </li>
+                                            <li>
+                                                GNU Debugger
+                                            </li>
+                                            <li>
+                                                Valgrind Memory Debugger
+                                            </li>
+                                            <li>
+                                                SCRUM/Agile methodologies
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="skills">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./images/platforms.png" alt="skills-1" style="width:100px;height:100px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase font-roboto text-center">Platforms & Frameworks</h5>
+                                    <p class="card-text text-secondary">
+                                        <ul>
+                                            <li>
+                                                Node.js
+                                            </li>
+                                            <li>
+                                                Express
+                                            </li>
+                                            <li>
+                                                Bootstrap
+                                            </li>
+                                            <li>
+                                                React
+                                            </li>
+                                            <li>
+                                                Laravel
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="skills">
+                                <div class="sevices-img text-center py-4">
+                                    <img src="./images/languages.png" alt="skills-1" style="width:100px;height:100px;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-uppercase font-roboto text-center">Programming Languages</h5>
+                                    <p class="card-text text-secondary">
+                                        <ul>
+                                            <li>
+                                                C/C++
+                                            </li>
+                                            <li>
+                                                Java
+                                            </li>
+                                            <li>
+                                                Python
+                                            </li>
+                                            <li>
+                                                JavaScript
+                                            </li>
+                                            <li>
+                                                jQuery
+                                            </li>
+                                            <li>
+                                                PHP
+                                            </li>
+                                            <li>
+                                                SQL
+                                            </li>
+                                            <li>
+                                                Shell Scripting
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+
+   
+
+        <!-- Projects Area -------------------------------------------------------------------------------------------  -->
+
+        <section class="project-area" id="portfolio">
+            <div class="container">
+                <div class="project-title">
+            
+                    <h1 class="text-uppercase title-h1">My Portfolio</h1>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" class="active" id="btn1" data-filter="*">All</button>
+                    <button type="button" data-filter=".systems">Systems-Programming</button>
+                    <button type="button" data-filter=".full">Full-Stack</button>
+                    <button type="button" data-filter=".pet">Pet Projects</button>
+
+                </div>
+
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item full">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./images/p1.jpg" alt="portfolio-1" class="img-fluid">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Game2</h4>
+                                <span class="text-secondary">Full-Stack, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item systems">
+                        <div class="our-project">
+                            <div class="img">
+
+                                <img src="./images/p2.jpg" alt="portfolio-2" class="img-fluid">
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Custom Kernel Module</h4>
+                                <span class="text-secondary">Systems-Programming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item systems">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./images/p3.jpg" alt="portfolio-3" class="img-fluid">               
+                            </div>
+                            <div class="title py-4">
+                                <h4 class="text-uppercase">Monitor</h4>
+                                <span class="text-secondary">Systems-Programming, Portfolio</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                   
+                   
+                   
+                   
+                </div>
+            </div>
+        </section>
+
+        <!--  ======================= End Project Area =============================  -->
+
+
+      
+
+
+    </main>
+  
 
 
     
+
+
 </body>
+
 </html>
