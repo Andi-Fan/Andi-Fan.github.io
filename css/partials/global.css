@@ -34,7 +34,7 @@
     color: black;
 }
 
-.button.primary-button::after, .button.secondary-button::after{
+.button.primary-button::after{
     position: absolute;
     top: -2px; left: -2px;
     bottom: -2px;  right: -2px;
@@ -43,6 +43,18 @@
     z-index: -1;
     border-radius: 4px;
 }
+
+.button.secondary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px;  right: -2px;
+    background: var(--gradient-color);
+    content: ' ';
+    z-index: -1;
+    border-radius: 4px;
+}
+
+
 
 .button.secondary-button{
     background: white;
@@ -57,6 +69,11 @@
 }
 
 p.para{
+    color: var(--text-color);
+    font: normal 500 16px/ 25px var(--roboto);
+}
+
+p.footerpara{
     color: var(--text-color);
     font: normal 500 16px/ 25px var(--roboto);
 }

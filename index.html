@@ -13,6 +13,7 @@
 
     <!--  font awesome icons  -->
     <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!--  custom css file  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -28,6 +29,12 @@
 
     <!--  isotope js library  -->
     <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!-- Jquery easing for scrolling -->
+    <script src="./vendor/scrolling/jquery-easing.min.js"></script>
+
+    <!-- Bootstrap pack -->
+    <script src="./vendor/scrolling/bootstrap.bundle.min.js"></script>
 
     <!--  custom js file  -->
     <script src="./js/main.js"></script>
@@ -134,10 +141,7 @@
             </div>
         </section>
 
-        <!--  ========================= End About Area ==========================  -->
-
-
-        <!--  ====================== Start skills Area =============================  -->
+        <!--  Start skills Area ------------------------------------------------------------------------------------  -->
 
         <section class="skills-area" id="skills">
             <div class="container">
@@ -260,8 +264,7 @@
         <section class="project-area" id="portfolio">
             <div class="container">
                 <div class="project-title">
-            
-                    <h1 class="text-uppercase title-h1">My Portfolio</h1>
+                    <h1 class="text-uppercase title-h1">Portfolio</h1>
                 </div>
 
                 <div class="button-group">
@@ -273,56 +276,148 @@
                 </div>
 
                 <div class="row grid">
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item full">
-                        <div class="our-project">
-                            <div class="img">
-                                <img src="./images/p1.jpg" alt="portfolio-1" class="img-fluid">
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Game2</h4>
-                                <span class="text-secondary">Full-Stack, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item systems">
-                        <div class="our-project">
-                            <div class="img">
+                    <div class="col-lg-3 col-md-6 col-sm-12 element-item full">
+                        <div class="projects">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
+                                    <p class="card-text text-secondary">
+                                        Sample text of a pet project.
+                                    </p>
 
-                                <img src="./images/p2.jpg" alt="portfolio-2" class="img-fluid">
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Custom Kernel Module</h4>
-                                <span class="text-secondary">Systems-Programming, Portfolio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item systems">
-                        <div class="our-project">
-                            <div class="img">
-                                <img src="./images/p3.jpg" alt="portfolio-3" class="img-fluid">               
-                            </div>
-                            <div class="title py-4">
-                                <h4 class="text-uppercase">Monitor</h4>
-                                <span class="text-secondary">Systems-Programming, Portfolio</span>
+                                    
+                                </div>
+                                <div class="contact-social text-center">
+                                    <img src="./icons/icons8-javascript-48.png" alt="">
+                                    <img src="./icons/icons8-c-programming-48.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                   
-                   
-                   
-                   
-                   
+                    <div class="col-lg-3 col-md-6 col-sm-12 element-item systems">
+                        <div class="projects">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
+                                    <p class="card-text text-secondary">
+                                        Sample text of a pet project.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 element-item systems">
+                        <div class="projects">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
+                                    <p class="card-text text-secondary">
+                                        Sample text of a pet project.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 element-item pet">
+                        <div class="projects projects-card">
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
+                                    <p class="card-text text-secondary">
+                                        Sample text of a pet project.
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 element-item pet">
+                        <div class="projects projects-card">
+                            
+                            <div class="card">
+
+                                <div class="card-body">
+                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
+                                    <p class="card-text text-secondary">
+                                        Sample text of a pet project.
+                                    </p>
+                                </div>
+
+                                <div class="contact-social text-center">
+                                    <img src="./icons/icons8-javascript-48.png" alt="">
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+                 
                 </div>
             </div>
         </section>
 
-        <!--  ======================= End Project Area =============================  -->
+<!-- Contact me ---------------------------------------------------------------------------------->
+    <section class="contact-area contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 contact-title">
+                    <h1 class="title-text text-uppercase text-center contact-title">Contact</h1>
+                    <p class="contact-text text-center">
+                        Interested in working together? 
+                    </p>
+                    <p class="contact-text text-center">
+                        I'm currently seeking tech internships, and will be available for work between May 2021 - September 2022.
+                    </p>
+                    <p class="contact-text text-center">
+                        I'd love to learn more about your company, feel free to contact me if you'd like to discuss an opportunity.
+                    </p>
+
+                    <div class="contact-btn text-center">
+                        <a href="mailto:andi.fan@mail.utoronto.ca" type="button" class="btn button primary-button text-uppercase">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="contact-social text-center">
+            <a href="#"><i class="fa fa-github px-3"></i></a>
+            <a href="#"><i class="fa fa-linkedin px-3"></i></a>
+            <a href="#"><i class="fa fa-envelope px-3" ></i></a>
+        </div>
+    </section>
 
 
-      
+
+<!--Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                
+                    <div class="copyrights text-center py-4">
+                        <p class="footerpara my-auto">
+                            Copyright ©2020 Andi Fan
+                        </p>
+                    </div>
 
 
+            
+            </div>
+        </footer>
+    
     </main>
+
+
+    
   
 
 
