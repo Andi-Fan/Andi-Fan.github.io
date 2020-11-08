@@ -186,7 +186,7 @@
 }
 
 .site-main > .project-area .card{
-    background: rgba(230, 262, 272, 0.973);
+    
     padding: 2rem 0;
     height: 16rem;
     width: 16rem;
@@ -201,9 +201,30 @@
 
 /* Contact */
 .site-main .contact-area{
-    padding-top: 35%;
+    padding-top: 13%;
     padding-bottom: 11%;
 }
+
+.contact-title{
+    color: var(--title-color);
+}
+
+.eyecatch{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font: normal 700 15px/2px var(--roboto);
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-para{
+    color: var(--text-color);
+    width: 550px;
+    padding-bottom: 3%;
+}
+
 
 .site-main .contact-area .contact-social{
     padding-top: 2%;
