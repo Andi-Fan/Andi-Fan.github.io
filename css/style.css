@@ -225,7 +225,7 @@
 }
 
 .proj-lang-icon{
-    color: blueviolet;
+    color: var(--primary-color);
 }
 
 .proj-card{
@@ -301,6 +301,7 @@
     box-shadow: var(--box-shadow);
     padding-top: 0.1rem;
     background: rgba(230, 262, 272, 0.973);
+    
 }
 
 
