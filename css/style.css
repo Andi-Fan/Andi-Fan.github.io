@@ -72,6 +72,7 @@
 }
 
 
+
 /* Banner Area */ 
 
 .site-main .site-banner {
@@ -88,7 +89,18 @@
     padding-right: 10%;
     text-align: right;
     font-size:22px;
+}
+
+.site-main .site-banner .social a:hover{
+    background: var(--primary-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
+.header-social{
     color: var(--primary-color);
+    font-size: x-large;
 }
 
 .site-main .site-banner .site-title h3{
@@ -104,6 +116,8 @@
 .site-main .site-banner .site-title h4{
     font-size: 1.5rem;
 }
+
+
 
 
 /* About Area */ 
@@ -222,7 +236,16 @@
 .site-main .project-area .gitlink{
     align-self: flex-end;
     font-size: xx-large;
+    color: var(--primary-color);
 }
+
+.proj-card a:hover{
+    background: var(--primary-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
 .project-card-title{
     margin-top: -2rem;
     color: var(--primary-color);
@@ -259,6 +282,18 @@
 
 .site-main .contact-area .contact-social{
     padding-top: 2%;
+}
+
+.site-main .contact-area .contact-social a:hover{
+    background: var(--primary-color2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
+}
+
+.contact-social-link{
+    color: var(--primary-color);
+    font-size: x-large;
 }
 
 /* footer */
