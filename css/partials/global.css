@@ -42,6 +42,7 @@
     content: ' ';
     z-index: -1;
     border-radius: 4px;
+    box-shadow: var(--box-shadow);
 }
 
 .button.secondary-button::after{
@@ -52,6 +53,7 @@
     content: ' ';
     z-index: -1;
     border-radius: 4px;
+    
 }
 
 
@@ -60,12 +62,14 @@
     background: white;
     background-clip: padding-box;
     transition: background .6s ease;
+    box-shadow: var(--box-shadow);
 }
 
 .button.secondary-button:hover{
     background: var(--gradient-color);
     color: whitesmoke;
     box-shadow: var(--box-shadow);
+    
 }
 
 p.para{

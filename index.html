@@ -87,11 +87,11 @@
                     <div class="col-lg-12 col-md-12 site-title">
                         <h3 class="title-text">Hi I'm</h3>
                         <h1 class="title-text">Andi</h1>
-                        <h4 class="title-text ">Back-end Developer and CS undergrad</h4>
+                        <h4 class="title-text ">Software Developer and CS undergrad</h4>
                         <div class="site-buttons">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire me</button>
-                                <button type="button" class="btn button secondary-button text-uppercase">Resume</button>
+                                <a type="button" class="btn button primary-button mr-4 text-uppercase js-scroll-trigger" href="#contact">hire me</a>
+                                <a type="button" class="btn button secondary-button text-uppercase" href="./documents/Andi_Fan_resume.pdf" target="_blank">Resume</a>
                             </div>
                         </div>
                     </div>
@@ -99,10 +99,9 @@
             </div>
             <div class="mr-auto"></div>
             <div class="social">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/Andi-Fan" target="_blank"><i class="fa fa-github px-1" style="font-size: x-large;"></i></a>
+                <a href="#"><i class="fa fa-linkedin px-1" style="font-size: x-large;"></i></a>
+                <a href="mailto:andi.fan@mail.utoronto.ca"><i class="fa fa-envelope px-1" style="font-size: x-large;"></i></a>
             </div>
         </section>
       
@@ -119,20 +118,16 @@
                     </div>
                     <div class="col-lg-6 col-md-12 about-title">
                         <h2 class="text-uppercase pt-5">
-                            <span>Let me</span>
-                            <span>introduce</span>
-                            <span>myself</span>
+                            <span>About Me</span>
                         </h2>
                         <div class="paragraph py-4 w-75">
                             <p class="para">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum iure obcaecati vel
-                                possimus officia maiores perferendis ut! Quos, perspiciatis.
+                                Hi I'm Andi! Currently I am in my third year as a computer science specialist
+                                student at the University of Toronto.
                             </p>
                             <p class="para">
-                                It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                more-or-less normal distribution of letters, as opposed to using 'Content here, content
-                                here
+                                I'm currently working as a Data-Science intern at Transport Canada. I have experience with Full-Stack
+                                web development, creating back-end RESTful API's, and am familiar with multi-tiered programming design principles.
                             </p>
                         </div>
                         <button type="button" class="btn button primary-button text-uppercase">Cover Letter</button>
@@ -276,58 +271,73 @@
                 </div>
 
                 <div class="row grid">
-                    <div class="col-lg-3 col-md-6 col-sm-12 element-item full">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item systems">
                         <div class="projects">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
-                                    <p class="card-text text-secondary">
-                                        Sample text of a pet project.
+                            <div class="card text-center">
+                                <div class="card-body proj-card-body">
+                                    <h5 class="font-roboto text-center project-card-title">Process Scheduler</h5>
+                                    <i class="fab fa-cuttlefish proj-lang-icon"></i>
+                                    <p class="text-secondary proj-text">
+                                        Implemented a MESA-style monitor that efficiently handles resource allocation, processor assignment, and job execution for a large volume of jobs.
                                     </p>
-
+                                    <a href="https://github.com/Andi-Fan" target="_blank" style="font-size: xx-large;" class="gitlink"><i class="fa fa-github"></i></a>
                                     
                                 </div>
-                                <div class="contact-social text-center">
-                                    <img src="./icons/icons8-javascript-48.png" alt="">
-                                    <img src="./icons/icons8-c-programming-48.png" alt="">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item systems">
+                        <div class="projects">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title font-roboto text-center project-card-title">Custom Kernel Module</h5>
+                                    <i class="fab fa-cuttlefish proj-lang-icon"></i>
+                                    <p class="proj-text text-secondary">
+                                        Coded and installed a custom kernel module which injects a custom system call into the system call table.
+                                        Allows commands from userspace to change behaviour of the custom system call. 
+                                    </p>
+                                    <a href="https://github.com/Andi-Fan" target="_blank" style="font-size: xx-large;" class="gitlink"><i class="fa fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 element-item systems">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item full">
                         <div class="projects">
-                            <div class="card">
+                            <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
-                                    <p class="card-text text-secondary">
-                                        Sample text of a pet project.
+                                    <h5 class="card-title font-roboto text-center project-card-title">LAMP Stack Multi-Game Website</h5>
+                                    
+                                    <i class="fab fa-php"></i>
+                                    <i class="fab fa-css3"></i>
+                                    <i class="fab fa-html5"></i>
+
+                                    <p class="proj-text text-secondary">
+                                        Website includes user management functionality, and employs multiple software security techniques. Website utilizes multi-tiered architecture. User's can choose from four simple games, Mastermind, Peg-Solitaire, 15 puzzle and guessgame.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 element-item systems">
-                        <div class="projects">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
-                                    <p class="card-text text-secondary">
-                                        Sample text of a pet project.
-                                    </p>
+                                    <a href="https://github.com/Andi-Fan/Multi-Game" target="_blank" style="font-size: xx-large;" class="gitlink"><i class="fa fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 element-item pet">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item full">
                         <div class="projects projects-card">
                             
-                            <div class="card">
+                            <div class="card text-center">
                                 <div class="card-body">
-                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
-                                    <p class="card-text text-secondary">
-                                        Sample text of a pet project.
+                                    <h5 class="card-title font-roboto text-center project-card-title">Dynamic 2D shooter</h5>
+                                    
+                                    <i class="fab fa-css3"></i>
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-node"></i>
+
+                                    <p class="proj-text text-secondary">
+                                        Website delivers a simple top down view survival-shooter, with competitive leaderboards and user stats. Backend 
+                                        uses Node.js and Express.js to create a custom RESTful API.
                                     </p>
+                                    <a href="https://github.com/Andi-Fan/Iso-Game" target="_blank" style="font-size: xx-large;" class="gitlink"><i class="fa fa-github"></i></a>
+                                    
                                 </div>
                             </div>
 
@@ -336,27 +346,54 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12 element-item pet">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item pet">
                         <div class="projects projects-card">
                             
-                            <div class="card">
+                            <div class="card text-center">
 
                                 <div class="card-body">
-                                    <h5 class="card-title font-roboto text-center project-card-title">Project 1</h5>
-                                    <p class="card-text text-secondary">
-                                        Sample text of a pet project.
+                                    <h5 class="card-title font-roboto text-center project-card-title">Cause for Paws Website</h5>
+                                   
+
+                                    <i class="fab fa-php"></i>
+                                    <i class="fab fa-css3"></i>
+                                    <i class="fab fa-html5"></i>
+                                   
+                                   
+                                    <p class="proj-text text-secondary">
+                                        Simple static website for Cause for Paws (UTM). Front-end made with bootstrap framework. Back-end designed using PHP and a 
+                                        front-panel controller architecture for future extensibility. 
                                     </p>
+                                    <a href="https://github.com/causeforpawsutm/Cause-for-Paws-Site" target="_blank" style="font-size: xx-large;" class="gitlink"><i class="fa fa-github"></i></a>
                                 </div>
 
-                                <div class="contact-social text-center">
-                                    <img src="./icons/icons8-javascript-48.png" alt="">
-                                </div>
+                               
 
 
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item systems">
+                        <div class="projects projects-card">
+                            
+                            <div class="card text-center">
+
+                                <div class="card-body">
+                                    <h5 class="card-title font-roboto text-center project-card-title">Simple Image Processor</h5>
+                                    <i class="fab fa-cuttlefish proj-lang-icon"></i>
+
+                                    <p class="proj-text text-secondary">
+                                        Processes simple image of cells and stores in a 2D array to determine the number of groups of cells found in the image.
+                                    </p>
+
+                                    <a href="https://github.com/Andi-Fan" target="_blank" style="font-size: xx-large;" class="gitlink"><i class="fa fa-github"></i></a>
+                                </div>
+
+                               
 
 
-
+                            </div>
                         </div>
                     </div>
 
@@ -389,9 +426,9 @@
 
         
         <div class="contact-social text-center">
-            <a href="#"><i class="fa fa-github px-3"></i></a>
-            <a href="#"><i class="fa fa-linkedin px-3"></i></a>
-            <a href="#"><i class="fa fa-envelope px-3" ></i></a>
+            <a href="https://github.com/Andi-Fan" target="_blank" style="font-size: x-large;"><i class="fa fa-github px-3"></i></a>
+            <a href="#" style="font-size: x-large;"><i class="fa fa-linkedin px-3"></i></a>
+            <a href="mailto:andi.fan@mail.utoronto.ca" style="font-size: x-large;"><i class="fa fa-envelope px-3" ></i></a>
         </div>
     </section>
 
@@ -400,18 +437,14 @@
 <!--Footer -->
         <footer class="footer-area">
             <div class="container">
-                
+
                     <div class="copyrights text-center py-4">
                         <p class="footerpara my-auto">
                             Copyright ©2020 Andi Fan
                         </p>
                     </div>
-
-
-            
             </div>
         </footer>
-    
     </main>
 
 

@@ -77,9 +77,10 @@
 .site-main .site-banner {
     background: url() no-repeat 0% 50%;
     padding-top: 17%;
-    
+    padding-bottom: 2%;
     padding-left: 10%;
     position: relative;
+    box-shadow: var(--box-shadow);
 }
 
 .site-main .site-banner .social{
@@ -87,8 +88,7 @@
     padding-right: 10%;
     text-align: right;
     font-size:22px;
-    color: var(--border-color);
-    
+    color: var(--primary-color);
 }
 
 .site-main .site-banner .site-title h3{
@@ -111,13 +111,23 @@
 .site-main .about-area{
     padding-top: 8%;
     padding-bottom: 6%;
+    padding-left: 10%;
+    box-shadow: var(--box-shadow);
+    
 }
 
 
 .site-main .about-area .about-title h2 > span{
     display: block;
     font: normal bold 49px/ 60px var(--roboto);
-    letter-spacing: 21px;
+}
+
+.site-main .about-title h2::after{
+    content: " ";
+    height: 2px;
+    width: 22vw;
+    background: black;
+    display: inline-block;
 }
 
 .site-main .about-area .about-title .paragraph > p{
@@ -135,6 +145,7 @@
 .site-main .skills-area{
     padding-top: 8%;
     padding-bottom: 4%;
+    box-shadow: var(--box-shadow);
 }
 
 .site-main .skills-area .skills-title{
@@ -151,6 +162,7 @@
     width: 16rem;
     margin: 5rem .5rem;
     transition: box-shadow .7s ease;
+    box-shadow: var(--box-shadow);
 }
 
 .site-main > .skills-area .skills:hover{
@@ -158,13 +170,16 @@
 }
 
 
-/* Project Area */ 
+/* Project Area -------------------------------------------------------------------------------------------------- */ 
 
 .site-main .project-area{
     padding-left: 5%;
     padding-top: 8%;
     padding-bottom: 0%;
+    box-shadow: var(--box-shadow);
+  
 }
+
 
 .site-main .project-area .button-group button{
     background: transparent;
@@ -181,25 +196,31 @@
     font: normal 400 20px/12px var(--roboto);
 }
 
-.site-main .project-area .grid .projects .img a:hover img{
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
-}
-
 .site-main > .project-area .card{
-    
     padding: 2rem 0;
-    height: 16rem;
-    width: 16rem;
+    height: 20rem;
+    width: 20rem;
     margin: 5rem .5rem;
     transition: box-shadow .7s ease;
     box-shadow: var(--box-shadow);
+    
+}
+.proj-text{
+    font-size: medium;
+    text-align: center;
 }
 
+.site-main .project-area .gitlink{
+    padding-top: 10%;
+}
 .project-card-title{
+    margin-top: -2rem;
     color: var(--primary-color);
+    font-size: large;
+    font-weight: bolder;
 }
 
-/* Contact */
+/* Contact -------------------------------------------------------------------------------------------------- */
 .site-main .contact-area{
     padding-top: 13%;
     padding-bottom: 11%;
@@ -232,9 +253,9 @@
 
 /* footer */
 .footer-area{
-    
+    box-shadow: var(--box-shadow);
     padding-top: 0.1rem;
-    background-color: rgb(185, 220, 221);
+    background: rgba(230, 262, 272, 0.973);
 }
 
 
